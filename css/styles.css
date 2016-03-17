@@ -1,0 +1,23 @@
+body
+{
+    margin: 0;
+}
+#friends-graph
+{
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#user-info-avatar
+{
+    position: absolute;
+    margin: 5px;
+    right: 0;
+}
+.graph-info
+{
+    margin-right: 20px;
+    float: left;
+}

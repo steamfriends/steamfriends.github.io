@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Steam friends</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--jQuery-->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <!--jQuery UI-->
+        <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <!--jQuery context menu-->
+        <script src="js/jQuery-contextMenu/jquery.contextMenu.min.js"></script>
+        <!--vis graph lib-->
+        <script src="js/vis/dist/vis.min.js"></script>
+        <!--logic-->
+        <script src="js/ExtraInfoLoader.js"></script>
+        <script src="js/Localization.js"></script>
+        <script src="js/SteamAPI.js"></script>
+        <script src="js/groupcache.js"></script>
+        <script src="js/main.js"></script>
+
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <link href="js/vis/dist/vis.min.css" rel="stylesheet" type="text/css">
+        <link href='js/jQuery-contextMenu/jquery.contextMenu.min.css' rel='stylesheet' type='text/css'>
+        <link href='js/jquery-ui-1.11.4.custom/jquery-ui.min.css' rel='stylesheet' type='text/css'>
+        <link href='lib/flag-icon-css/css/flag-icon.min.css' rel='stylesheet' type='text/css'>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="friends-graph"></div>
+        <!--Add user dialog-->
+        <div id="adduser-dialog">
+            <form>
+                <input type="text" name="steamId" id="name" placeholder="Profile URL / SteamID / CommunityID" style="width: 100%">
+            </form>
+        </div>
+        <!--friends relationships info popup-->
+        <div id="friendsrel-info-popup">
+            <span id="friendsSinceText"></span>: <span id="friendsSince"></span>
+        </div>
+        <!--player info popup-->
+        <div id="user-info-dialog">
+            <img src="" id="user-info-avatar"/>
+            <table id="user-summary">
+            </table>     
+        </div>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-75235349-2', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

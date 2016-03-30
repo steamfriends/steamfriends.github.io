@@ -1,5 +1,5 @@
 function SteamAPI() {
-    var apiURI = 'http://api.steamfriends.home/api/';//http://steamfriends.herokuapp.com/api/
+    var apiURI = 'http://steamfriends.herokuapp.com/api/';//http://api.steamfriends.home/api/
     this.getPlayersSummaries = function (ids, onLoad)
     {
         $.getJSON(apiURI + 'getPlayersSummaries.php?ids=' + (Array.isArray(ids) ? ids.join(',') : ids), onLoad);
